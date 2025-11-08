@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px 10px;
+    }
+
+    header p {
+      font-size: 24px;
+      margin: 0;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 80px;
+    }
+
+    .image-row img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
+    nav button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      transition: background-color 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #ddd;
+    }
+
+    section {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    section.active {
+      display: flex;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: #f0f0f0;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p>Welcome to</p>
+    <h1>Saturn Computing topic's Webserver</h1>
+  </header>
+
+  <nav>
+    <button onclick="showSection('CW')">CalculatorWare</button>
+  </nav>
+  <section id="CW">
+    <h1>CalculatorWare v1</h1>
+    <p><a href="Source/CalculatorWare/CalculatorWare v1/CalculatorWare.py">CalculatorWare.py(v1)</a></p>
+    <p><a href="Source/CalculatorWare/CalculatorWare v1/CalculatorWare.S">CalculatorWare.S(v1)</a></p>
+   
+  </section>
+  <footer>
+    We make Games and Software · © 2025 Saturn Computing Inc.
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(section => {
+        section.classList.remove("active");
+      });
+      const target = document.getElementById(id);
+      if (target) {
+        target.classList.add("active");
+      }
+    }
+  </script>
+  	<script>
+		// Auto age calculator
+		const birthYear = 2013;
+		const birthMonth = 9; // October (0 = January)
+		const birthDay = 16;
+
+		const today = new Date();
+		let age = today.getFullYear() - birthYear;
+
+		// Check if birthday has occurred this year
+		const birthdayPassed = (today.getMonth() > birthMonth) || 
+			(today.getMonth() === birthMonth && today.getDate() >= birthDay);
+
+		if (!birthdayPassed) age -= 1;
+		document.getElementById("age").textContent = age;
+
+		// Update footer year
+		document.getElementById("year").textContent = today.getFullYear();
+
+		// Show birthday banner on October 16
+		if (today.getMonth() === birthMonth && today.getDate() === birthDay) {
+			document.getElementById("birthdayBanner").style.display = "block";
+		}
+	</script>
+
+
+</body>
+</html>

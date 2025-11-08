@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SaturnComputing - Webserver</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px 10px;
+    }
+
+    header p {
+      font-size: 24px;
+      margin: 0;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 80px;
+    }
+
+    .image-row img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
+    nav button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      transition: background-color 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #ddd;
+    }
+
+    section {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    section.active {
+      display: flex;
+    }
+
+    iframe {
+      margin: 10px 0;
+      width: 300px;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: #f0f0f0;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p>Welcome to</p>
+    <h1>Saturn Computing topic's Webserver</h1>
+  </header>
+
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('downloads')">Software and Games</button>
+    <button onclick="showSection('Contact')">Contact Saturn Computing</button>
+    <a href="ListMade.html"><button>How software are made</button></a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="active">
+    <div class="image-row">
+      <img src="assets/20250712_193605.jpg" alt="Inside the Australian pedestrian keychain">
+      <a href="https://saturn-computing-topic.itch.io/yanderecexe">
+        <img src="assets/YandereC.exe_level_1.png" alt="YandereC.exe screenshot">
+      </a>
+      <a href="login.php">Sign up/Login</a>
+      <p>Saturn Computing topic is a Game/firmware developer that is anti-cloud, meaning we do not use cloud hosting or cloud services.</p>
+      <p>We make games and firmware.</p>
+    </div>
+    <h1>About the Developer</h1>
+<p>
+  The developer is <span id="age"></span>-year-old programmer who knows 
+  PHP, Dart, GML, Python, x86 Assembly, VBScript, Fortran, Java, JavaScript, 
+  C, C++, C#, Ruby, Rust, R, and Lua — as well as Scratch and Adacraft. 
+  Even though he’s still learning, he can already create his own games. 
+  He also uses AI tools because he loves experimenting with artificial intelligence.
+</p>
+
+<p>He is silent and chill.</p>
+
+<p>
+  He is currently in 7th grade, having graduated elementary school in April 2025. 
+  Even though he’s not yet an expert, he can already write solid basic code. 
+  He would even skip online classes to get more work done in projects. 
+  Even a boy or girl with basic engineering knowledge can beat this guy.
+</p>
+
+<p>He even has autism.</p>
+
+		
+
+  </section>
+
+  <!-- Downloads Section -->
+  <section id="downloads">
+    <p>You can download Saturn topic's software/games using the itch.io page <a href="https://saturn-computing-topic.itch.io/">here</a>.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="Contact">
+    <h1>Contact Info</h1>
+    <p>Email: hatsanmobiletopic@gmail.com</p>
+    <p>Email: saturncomputing124@gmail.com</p>
+    <p>Phone: 9815684954</p>
+  </section>
+
+
+  <footer>
+    We make Games and Software · © 2025 Saturn Computing Inc.
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(section => {
+        section.classList.remove("active");
+      });
+      const target = document.getElementById(id);
+      if (target) {
+        target.classList.add("active");
+      }
+    }
+  </script>
+  	<script>
+		// Auto age calculator
+		const birthYear = 2013;
+		const birthMonth = 9; // October (0 = January)
+		const birthDay = 16;
+
+		const today = new Date();
+		let age = today.getFullYear() - birthYear;
+
+		// Check if birthday has occurred this year
+		const birthdayPassed = (today.getMonth() > birthMonth) || 
+			(today.getMonth() === birthMonth && today.getDate() >= birthDay);
+
+		if (!birthdayPassed) age -= 1;
+		document.getElementById("age").textContent = age;
+
+		// Update footer year
+		document.getElementById("year").textContent = today.getFullYear();
+
+		// Show birthday banner on October 16
+		if (today.getMonth() === birthMonth && today.getDate() === birthDay) {
+			document.getElementById("birthdayBanner").style.display = "block";
+		}
+	</script>
+
+
+</body>
+</html>

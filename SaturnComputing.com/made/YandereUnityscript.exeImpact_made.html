@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YandereUnityScript.exe Impact - How It Was Made</title>
+	<style>
+		body {
+			font-family: 'Comic Sans MS', cursive;
+			font-size: 16px;
+			line-height: 1.6;
+			margin: 20px auto;
+			max-width: 900px;
+			background-color: #fff;
+			color: #000;
+		}
+		h1 {
+			font-size: 28px;
+			margin-top: 40px;
+		}
+		section h1 {
+			color: #007acc;
+			margin-top: 30px;
+		}
+		section {
+			margin-bottom: 40px;
+			padding-left: 10px;
+			border-left: 3px solid #007acc;
+			background: #f9f9f9;
+		}
+		nav a {
+			margin-right: 10px;
+			font-weight: bold;
+			color: #007acc;
+			text-decoration: none;
+		}
+		nav a:hover {
+			text-decoration: underline;
+		}
+		footer {
+			margin-top: 50px;
+			font-size: 14px;
+			color: #666;
+			text-align: center;
+		}
+
+		/* Birthday banner */
+		#birthdayBanner {
+			display: none;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+			color: #ff4d4d;
+			text-shadow: 0 0 15px #ff0000, 0 0 30px #ff3333;
+			animation: glow 2s ease-in-out infinite alternate, fadeIn 1.5s ease;
+			margin-bottom: 40px;
+		}
+		@keyframes glow {
+			from { text-shadow: 0 0 10px #ff4d4d; }
+			to { text-shadow: 0 0 30px #ff0000, 0 0 50px #ff4d4d; }
+		}
+		@keyframes fadeIn {
+			from { opacity: 0; transform: translateY(-10px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+	</style>
+</head>
+<body>
+
+	<div id="birthdayBanner">🎉 Happy Birthday, Developer! 🎂</div>
+
+	<section>
+		<h1>YandereUnityScript.exe Impact — How It Was Made</h1>
+		<p>On October 11, 2025, the developer fired up their Windows 10 computer.</p>
+		<p>They installed Unity 5.4, and after the installation finished, they launched it and created a new project.</p>
+		<p>On October 12, the entire project was scrapped — but the idea lived on.</p>
+		<p>On October 14 (two days before his birthday), the entire game was ported to Unity 2022.2.</p>
+		<p>However, since Unity’s UI wasn’t working properly, he switched to Unity 2020.1.</p>
+		<p>Since there was no text box feature, he hated it — so it turned into an FPS game, but the developer scrapped it again.</p>
+		<p>The project was scrapped entirely. The Plus version will use Unity 5.4, while the original game will be rebuilt in MonoGame.</p>
+		<p>The reason MonoGame was chosen is because the Windows 10 laptop couldn't start properly. So he used a linux machine with MonoGame</p>
+		<p>In october 15 (1 day before the developer birthday) he switched to unity but he did not dare to do that</p>
+	</section>
+
+	<section>
+		<h1>About the Developer</h1>
+		<p>The developer is <span id="age"></span>-year-old programmer who knows 
+			PHP, Dart, GML, Python, x86 Assembly, VBScript, Fortran, Java, JavaScript, 
+			C, C++, C#, Ruby, Rust, R, and Lua — as well as Scratch and Adacraft. 
+			Even though he’s still learning, he can already create his own games. 
+			He also uses AI tools because he loves experimenting with artificial intelligence.
+		</p>
+		<p>He is silent and chill.</p>
+		<p>He is currently in 7th grade, having graduated elementary school in April 2025.</p>
+		<p>Even though he’s not yet an expert, he can already write solid basic code.</p>
+		<p>He would even not listen to online classes to get more work done in projects.</p>
+		<p>Even a boy or girl with basic engineering knowledge can beat this guy.</p>
+	</section>
+
+	<footer>© <span id="year"></span> Saturn Computing Dev — Made with Unity 5.4 and chaos.</footer>
+
+	<script>
+		// Auto age calculator
+		const birthYear = 2013;
+		const birthMonth = 9; // October (0 = January)
+		const birthDay = 16;
+
+		const today = new Date();
+		let age = today.getFullYear() - birthYear;
+
+		// Check if birthday has occurred this year
+		const birthdayPassed = (today.getMonth() > birthMonth) || 
+			(today.getMonth() === birthMonth && today.getDate() >= birthDay);
+
+		if (!birthdayPassed) age -= 1;
+		document.getElementById("age").textContent = age;
+
+		// Update footer year
+		document.getElementById("year").textContent = today.getFullYear();
+
+		// Show birthday banner on October 16
+		if (today.getMonth() === birthMonth && today.getDate() === birthDay) {
+			document.getElementById("birthdayBanner").style.display = "block";
+		}
+	</script>
+</body>
+</html>

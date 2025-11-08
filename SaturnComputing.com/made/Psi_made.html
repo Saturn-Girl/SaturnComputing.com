@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Sekai Impact — Developer Diary</title>
+    <style>
+        /* Retro pixel font */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background-color: #111;
+            color: #f0f0f0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        nav {
+            width: 220px;
+            background-color: #222;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+        }
+        nav h2 {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #00ffea;
+        }
+        nav a {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 12px;
+            color: #00ffea;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        main {
+            margin-left: 240px;
+            padding: 30px;
+            max-width: 900px;
+            flex: 1;
+        }
+
+        section {
+            margin-bottom: 60px;
+            padding: 15px;
+            border-left: 4px solid #00ffea;
+            background-color: #1a1a1a;
+        }
+
+        h1, h2 {
+            color: #00ffea;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 12px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 10px;
+            color: #888;
+            margin-top: 50px;
+        }
+
+        /* Scroll smooth */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>Developer Diary</h2>
+        <a href="#timeline">Timeline</a>
+        <a href="#about">About the Developer</a>
+    </nav>
+
+    <main>
+        <section id="timeline">
+            <h1>Project Timeline</h1>
+            <p>On September 24, the idea for a Project Sekai fan game began, but there were many name ideas. 
+            <strong>Project Sekai Impact</strong> was ultimately chosen.</p>
+
+            <p>The game went through many engine switches—so many the developer lost count. The OSU! framework was considered first, then Pygame, UPBGE, Unity, Ren'Py, MonoGame, and even the Blender Game Engine (not UPBGE). Finally, Ursina and Unity were used at different points.</p>
+
+            <p>On September 28, high-level logic was written in C++ and Python, with assembly handling low-level mechanics. October 20 briefly saw the project on Source Engine and a modified Raylib, before returning to Unity.</p>
+        </section>
+
+        <section id="about">
+            <h1>About the Developer</h1>
+            <p>The developer is a 12-year-old programmer who knows PHP, Dart, GML, Python, x86 Assembly, VBScript, Fortran, Java, JavaScript, C, C++, C#, Ruby, Rust, R, Lua, Scratch, and Adacraft. He loves old tech, experimenting with AI, and making games.</p>
+
+            <p>Currently in 7th grade, he graduated elementary school in April 2025. Despite being young, he’s capable of creating his own games and learning new engines quickly. He sometimes prioritizes coding over online classes to get more work done.</p>
+
+            <p>Don’t expect “Project Sekai Impact” to be perfect yet—it’s still a work in progress!</p>
+        </section>
+
+        <footer>
+            &copy; 2025 Saturn Computing. All rights reserved.
+            <p>-.-- .- -. -.. . .-. . .--. -.-- - .... --- -. .-.-.- . -..- . / -....- / ..--- / .-- .. .-.. .-.. / ..- ... . / -.-. .-. -.-- . -. --. .. -. . / .- -. -.. / .-- .. .-.. .-.. / -... . / .-- .-. .. - - . -. / .. -. / -.-. .--. .--. / .- -. -.. / .- ... ... . -- -... .-.. -.--</p>
+        </footer>
+    </main>
+
+</body>
+</html>

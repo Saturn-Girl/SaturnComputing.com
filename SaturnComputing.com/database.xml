@@ -1,0 +1,29 @@
+<SaturnComputing>
+    <PhoneListings>
+        <Phone brand="Nokia">
+            <Link id="1">https://shopee.ph/hobikuhobiku893rh.ph#product_list</Link>
+            <Link id="2">https://shopee.ph/herutw1995.ph?categoryId=100013&amp;entryPoint=ShopByPDP&amp;itemId=44056116761&amp;upstream=search</Link>
+            <Link id="3">https://shopee.ph/alexethanrhose08#product_list</Link>
+        </Phone>
+    </PhoneListings>
+    
+    <Games> 
+        <Game title="YanderePython.exe">
+            <Developer>SaturnComputing</Developer>
+            <GameEngine name="Ren'Py"/>
+            <ProgrammingLanguages>
+                <Language>Python</Language>
+                <Language>Assembly</Language>
+            </ProgrammingLanguages>
+            <ReleaseDate>2025-09-12</ReleaseDate>
+        </Game>
+        <Games title="YandereAssembly.exe"> 
+                <Developer>SaturnComputing</Developer>
+                <GameEngine name="Ren'Py"/>
+                <ProgrammingLanguages>
+                    <Language>Assembly</Language>
+                    <Language>Python</Language>
+                </ProgrammingLanguages>
+        </Games>
+    </Games>
+</SaturnComputing>
