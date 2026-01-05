@@ -2,53 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>YanderePython.exe – How it was made</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YanderePython.exe – Development Logs</title>
   <style>
+    /* Basic Clean Modern Style */
     body {
-      font-family: 'Comic Sans MS', cursive;
+      font-family: 'Comic Sans MS', cursive; /* Keeping your preferred font */
       font-size: 16px;
       line-height: 1.6;
-      margin: 20px;
-      background-color: #fff;
-      color: #000;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0;
+      background-color: #f0f2f5;
+      color: #1a1a1a;
     }
-    h1 {
-      font-size: 28px;
-      margin-top: 40px;
+    header {
+      background: #007acc;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
     }
-    h2 {
-      font-size: 22px;
-      margin-top: 30px;
-    }
+    h1 { margin: 0; font-size: 32px; }
     nav {
-      margin-bottom: 20px;
+      background: #fff;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      z-index: 1000;
     }
     nav a {
-      margin-right: 10px;
+      margin: 0 10px;
       font-weight: bold;
       color: #007acc;
       text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    hr {
-      margin-top: 50px;
-    }
-    footer {
-      margin-top: 50px;
       font-size: 14px;
-      color: #666;
-      text-align: center;
     }
+    nav a:hover { text-decoration: underline; }
+    
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    
     section {
-      margin-bottom: 40px;
-      padding-left: 10px;
-      border-left: 3px solid #007acc;
-      background: #f9f9f9;
+      margin-bottom: 30px;
+      padding: 25px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-left: 5px solid #007acc;
+    }
+    
+    h2 { color: #007acc; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+    .fun-fact { font-style: italic; color: #555; background: #eef7ff; padding: 10px; border-radius: 4px; display: block; margin: 10px 0; }
+    
+    iframe { border: none; border-radius: 8px; max-width: 100%; height: auto; aspect-ratio: 16/9; }
+    
+    footer {
+      padding: 40px;
+      background: #333;
+      color: #ccc;
+      text-align: center;
     }
   </style>
 </head>
@@ -56,192 +71,85 @@
 
   <header>
     <h1>About YanderePython.exe</h1>
-    <nav>
-      <a href="#UnityEngine">Switching to Unity</a>
-      <a href="#timeline">Timeline</a>
-      <a href="#development">2025 Development</a>
-      <a href="#tools">Art & Tools</a>
-      <a href="#june">June 2025</a>
-      <a href="#july">July 2025</a>
-      <a href="#devinfo">Developer Information</a>
-      <a href="#renpy">Ren’Py Engine</a>
-      <a href="#UPBGE">Blender Game Engine</a>
-	  <a href="#GameMaker">(NEW) YanderePython.exe Impact - 2(GameMaker)</a>
-    </nav>
+    <p>The journey from Ren'Py to Unity, Godot, and GameMaker</p>
   </header>
+
+  <nav>
+    <a href="#timeline">Timeline</a>
+    <a href="#development">2025 History</a>
+    <a href="#tools">Tools</a>
+    <a href="#renpy">Ren’Py Phase</a>
+    <a href="#UPBGE">Blender 3D</a>
+    <a href="#GameMaker">Impact - 2 (GameMaker)</a>
+    <a href="#devinfo">The Developer</a>
+  </nav>
 
   <main>
     <section>
-      <p>This page contains the development logs, personal information, and history of <strong>YanderePython.exe</strong>.</p>
-      <p><strong>YanderePython.exe</strong> is a proprietary non Yandere Simulator-inspired clone made in Ren’Py 7.5 using x86 assembly and some Python. It was developed by an 12-year-old coder who knows PHP, GML, Python, Assembly, VBScript, Fortran, Java, JavaScript, C/C++, C#, Ruby, Rust, R, Lua, Scratch, and Adacraft. He is a fan of old tech, GTA, Minecraft (portals!), RollerCoaster Tycoon, and also knows circuit wiring.</p>
+      <p>This page contains the development logs, personal history, and technical details of <strong>YanderePython.exe</strong>.</p>
+      <p>A proprietary project originally made in Ren’Py 7.5 using x86 assembly and Python. Developed by a coder with a massive arsenal of languages including PHP, C++, Assembly, and Rust. A fan of old tech, GTA, and circuit wiring.</p>
     </section>
 
     <section id="timeline">
       <h2>Development Timeline</h2>
-      <p>The project began around October 31 or November 1, 2024, originally written in Python. While Python is slow, it's beginner-friendly—perfect for starting this project. Initially named <em>Yandere School Python Simulator</em>, it later became <strong>YanderePy</strong> in late November.</p>
-      <p><strong>Fun Fact:</strong> The game originally used OpenGL, which is a graphics library—not a full game engine.</p>
-      <p>By late December 2024, the name changed to <strong>YanderePy.exe</strong> and the plan shifted to open source in Unity. The developer started prototyping in Unity 5.4 (without Unity Hub) using both C# and Python, unaware that Unity does not support Python natively. He learned C# from <a href="https://www.youtube.com/@programmingwithmosh">Programming with Mosh</a> and from his previous project <strong>Lofi School Simulator</strong>.</p>
-      <p><strong>Fun Fact:</strong> A planned romantic scene was removed in April–May 2025 as it did not fit the game’s direction.</p>
-      <p>The Unity version only had a falling cube and no school environment. ChatGPT was asked for movement code, but it wasn’t used (<a href="https://chatgpt.com/share/68c08ca1-8e04-8003-8381-65c6e55b8703">see chat for the OpenGL version</a>).</p>
-      <p>The project later switched to <strong>Godot 3.2</strong> using GDScript.</p>
+      <p>The project began around Halloween 2024. Originally named <em>Yandere School Python Simulator</em>, it was later renamed <strong>YanderePy</strong>.</p>
+      <span class="fun-fact"><strong>Fun Fact:</strong> The game originally used raw OpenGL before moving to full game engines.</span>
+      <p>By late 2024, the plan shifted to Unity. Despite learning C# from Mosh, the early Unity versions only featured a falling cube. Eventually, the project switched to Godot 3.2 using GDScript.</p>
     </section>
 
     <section id="development">
-      <h2>2025 Development</h2>
-      <p>In January 2025, the project moved to <strong>Pygame + PyOpenGL</strong>. In March, the <a href="https://saturn-computing-topic.itch.io/yanderepyexe-pocket-edition-renpy-prototype">Ren'Py Pocket Edition Prototype</a> was created—an 18+ version with no boss fights.</p>
-      <p><strong>Fun Fact:</strong> This Ren'Py version was the first proprietary game the developer ever made.</p>
-      <p>In April, an April Fools’ build was made. Development slowed but resumed on May 17, with active progress by May 31.</p>
-    </section>
-
-    <section>
-      <h2>Licensing</h2>
-      <p>The project uses a proprietary license with a <code>License.txt</code> and <strong>EULA</strong>. Despite the Ren'Py version being the first working VN, the developer never wanted to make one in Unity.</p>
-    </section>
-
-    <section>
-      <h2>Game Size</h2>
-      <p>Originally aiming for 128 MB, the size target grew to 1.2 GB to allow compatibility with Windows 7. Windows 95–98 support was abandoned due to performance limits.</p>
-      <p><strong>Fun Fact:</strong> YanderePy.exe is always 32-bit—x86 for 32-bit systems and x64-compatible for 64-bit ones.</p>
+      <h2>2025 Development & Engines</h2>
+      <p>In early 2025, the project experimented with Pygame + PyOpenGL. March saw the release of the Ren'Py Pocket Edition Prototype—the first proprietary game from Saturn Computing.</p>
+      <p><strong>Licensing:</strong> The project uses a proprietary license with a strict EULA. Windows 95–98 support was eventually abandoned in favor of Windows 7 compatibility (Target size: 1.2 GB).</p>
     </section>
 
     <section id="tools">
       <h2>Art & Tools</h2>
-      <p>Art was created in <strong>MS Paint</strong> and refined in <strong>GIMP</strong>. 3D models were made in Blender 2.80 (preferred for its light theme) and sometimes 3DS MAX.</p>
-    </section>
-
-    <section id="june">
-      <h2>June 2025</h2>
-      <ul>
-        <li><strong>June 2:</strong> Started new project in Unity 5.4.</li>
-        <li><strong>June 3:</strong> Released tech demo.</li>
-        <li><strong>June 4:</strong> Planned sound update.</li>
-        <li><strong>June 5:</strong> Released June 5 build.</li>
-        <li><strong>Post-June 5:</strong> Focus shifted to <strong>MeowRay</strong>, a 3D modeling tool.</li>
-        <li><strong>June 7:</strong> Celebrated Unity’s birthday early and made June 8 build.</li>
-        <li><strong>June 8:</strong> Began YanderePy.exe 2 prototype.</li>
-        <li><strong>June 10:</strong> Released June 10 build; decided to keep building until October 16.</li>
-      </ul>
-    </section>
-
-    <section id="july">
-      <h2>July 2025</h2>
-      <p>In July, the project switched to the <strong>Source Engine</strong>. On July 26, C++ code was converted to C so that x86 assembly could call it. On July 28, plans were made to embed QEMU to run KolibriOS inside the game. Later, the idea of using Raylib came up.</p>
-      <p><strong>Fun Fact:</strong> The ".exe" in the name is meant to teach Markiplier how .exe files work and give the project a creepypasta vibe.</p>
-      <p>Eventually, the Source Engine was abandoned and the project moved to Raylib.</p>
-    </section>
-
-    <section id="UnityEngine">
-      <h2>Unity Engine</h2>
-      <p>On August 2, 2025, the developer switched to Unity 2022.2, mixing C# and assembly. No Python code was included in this version.</p>
+      <p>Visuals were crafted in <strong>MS Paint</strong> and <strong>GIMP</strong>. 3D work happened in <strong>Blender 2.80</strong> (Light Theme) and 3DS MAX. The project briefly moved to the <strong>Source Engine</strong> in July 2025 before being ported to Raylib for performance.</p>
     </section>
 
     <section id="renpy">
-      <h2>Ren’Py Engine</h2>
-      <p>On August 8, 2025, the developer switched to Ren’Py.</p>
-      <p>In September 1 the codebase reached 596 lines of code and added a C# script called MonoBleedingEdge.cs.</p>
-      <p>However, Chris(Earl edgar A Luamgui) (the developer) used AI to make it 594 lines of code.</p>
-      <p>On September 5, the developer switched to Unity but quickly changed his mind and went back to Ren’Py.</p>
-      <p>Mainly because he’s an idiot who doesn’t even have a proper mouse.</p>
-      <p>On September 6, 2025, the developer scrapped the entire project.</p>
-      <p>The game was originally supposed to release on September 10 at 3:50 PM, but now it’s September 11 at 3:50 PM (please don’t hate me 😅).</p>
-      <p><strong>Fun Fact:</strong> The EGG part of the game represents the developer getting an EEG at September 10.</p>
-      <p>In September 11 2025 the codebase reached 712 lines of code.</p>
-      <p>At 6:45 PM YanderePython.exe was finally Released so PagerOS dev finally closed VS Code.</p>
-      <p>But in September 12 he got back to working it and deleted the build on itch.io.</p>
-      <p>In 10:08 PM of September 12 he compiled the game.</p>
-      <p>In September 14 he went back from developing it and released it on September 26 2025.</p>
-      <p><strong>Fun Fact:</strong> The scene where a character goes to another section in the game is based on the developer's real-life experience. In the game, the character Cassandra represents the developer, moving from Section A to Section B after getting into trouble. In real life, the developer, who is in Section Paul, had to move to Section Timothy for the same reason. (For safety reasons I won’t tell what I got in trouble for because that is violent.)</p>
-      <p>For the code editor originally vs code but the developer uses sublime text</p>
-      <p><strong>Fun Fact</strong> did you know that the character <a href="johnny.png">Johnny</a> is a modified version of jimmy neutron when the developer is imgining it he described it as jimmy neutron</p>
-      <p>In September 17 the game is finally been released however episode 1 will be in september 26 and episode 2 will be in october 3 no episode 3 cause episode 2 is the last</p>
-      <p><strong>Fun Fact</strong> Did you know some of the game like the character are taken from games yes using screenshot
-      For example the chcracter yuki is just Yandere-Chan with long hair taken from Yandere Simulator build 2016
-      For Lei it is taken from tomoka itoh from School Girls Simulator
-      </p>
-    
+      <h2>Ren’Py & Release Cycle</h2>
+      <p>September 2025 was chaotic. The developer switched between Unity and Ren’Py multiple times. The game was scrapped on September 6 but revived shortly after. <strong>YanderePython.exe</strong> finally released on September 17, with Episode 1 arriving September 26, 2025.</p>
+      <span class="fun-fact"><strong>Fun Fact:</strong> The character Yuki uses modified assets from the 2016 Yandere Simulator build.</span>
     </section>
 
-    <p>In september 19 the development of YanderePython.exe Impact started</p>
-    <p>
-      In september 22 after the release of episode 1 the developer sleeped but when he woke up and decided 
-      the he was gonna port the game into turbowarp as an RPG game. However the developer did not mind about it
-      in september 23 the developer  switched to gdevelop. But again goes to renpy for episode 2 he called it quits and will work on it if he feels to
-    </p>
-    <P>In september 28 it got rebranded as YanderePython.exe Impact</P>
-    <P>in october 12 the developer switched to unity 5 for the visual novel version of the game</P>
-
     <section id="UPBGE">
-      <h2>Blender Game Engine/YanderePython.exe - 2</h2>
-      <p><strong>Fun Fact:</strong>when the developer was working on the game he opened UPBGE and developed YanderePython.exe - 2 you might think it is open source nope it is also proprietary even with a GPL licensed engine</p>
-      <P>But the developer said UPBGE sucks</P>
-      <iframe src="assets/YanderePython.exe - 2.png" height=640 width=1080></iframe>
+      <h2>Blender Game Engine / YanderePython.exe - 2</h2>
+      <p>While testing UPBGE, the developer started <strong>YanderePython.exe - 2</strong>. Despite using a GPL engine, this project remains proprietary.</p>
+      <img src="assets/YanderePython.exe - 2.png" alt="YanderePython 2 Preview" style="width:100%; height:auto;">
+    </section>
+
+    <section id="GameMaker">
+      <h2>YanderePython.exe Impact - 2 (GameMaker)</h2>
+      <p>While we don't want to spoil too much, <strong>Impact - 2 runs on GameMaker</strong>. The game is set in 2028 with an older protagonist. It is planned to have a very sad ending set in the 2030s.</p>
+      <p>Visit the itch.io page: <a href="https://saturn-computing-topic.itch.io/yanderepythonexe-2" target="_blank">View on Itch.io</a></p>
     </section>
 
     <section id="devinfo">
-          <h1>About the Developer</h1>
-		<p>The developer is <span id="age"></span>-year-old programmer who knows 
-			PHP, Dart, GML, Python, x86 Assembly, VBScript, Fortran, Java, JavaScript, 
-			C, C++, C#, Ruby, Rust, R, and Lua — as well as Scratch and Adacraft. 
-			Even though he’s still learning, he can already create his own games. 
-			He also uses AI tools because he loves experimenting with artificial intelligence.
-      <p>He is silent and chill.</p>
-		  He is currently in 7th grade, having graduated elementary school in April 2025.
-		  Even though he’s not yet an expert, he can already write solid basic code.
-		  He would even not listen to online classes to get more work done in projects
-		  Even a boy or girl with basic engineering knowledge can beat this guy. cause this guy has a little knowlage of engineering
-		</p>
-      <P>He has autism. He uses 6502 assembly</P>
-      <p><em>Ain’t no way he is a Project Sekai fanboy.If he is one he will drink rain water</em></p>
-<p>
-  He uses the windows operating system, specifically
-  While he had tried <strong>Ubuntu</strong>, it never worked properly on his PC.  
-  On his laptop, windows was the only option he had.  
-  When he installed Ubuntu, <a href="https://www.gnu.org/software/grub/">GRUB</a> (the bootloader) was overwritten by Windows,  
-  even when the SATA cable was disconnected.
-</p>
-		<section id="GameMaker>
-			<h2>While we dont want to spoil YanderePython.exe Impact - 2 it runs on GameMaker</h2>
-			<p>The main character from YanderePython.exe will be aged up and the game will set in 2028 </p>
-			<p>You can find it's itch.io <a href="https://saturn-computing-topic.itch.io/yanderepythonexe-2">here</a></p>
-			<p>It will have a very sad ending where Yuki(In game character) dies in the 2030s</p>
-			<p>If you wanna learn more about this game then wait</p>
-		</section>
-	<script>
-		// Auto age calculator
-		const birthYear = 2013;
-		const birthMonth = 9; // October (0 = January)
-		const birthDay = 16;
-
-		const today = new Date();
-		let age = today.getFullYear() - birthYear;
-
-		// Check if birthday has occurred this year
-		const birthdayPassed = (today.getMonth() > birthMonth) || 
-			(today.getMonth() === birthMonth && today.getDate() >= birthDay);
-
-		if (!birthdayPassed) age -= 1;
-		document.getElementById("age").textContent = age;
-
-		// Update footer year
-		document.getElementById("year").textContent = today.getFullYear();
-
-		// Show birthday banner on October 16
-		if (today.getMonth() === birthMonth && today.getDate() === birthDay) {
-			document.getElementById("birthdayBanner").style.display = "block";
-		}
-	</script>
-
+      <h2>About the Developer</h2>
+      <p>The developer is a <span id="age">12</span>-year-old programmer (7th Grade) who mastered elementary school in April 2025. He uses <strong>6502 and x86 Assembly</strong> and works primarily on Windows after various struggles with Linux GRUB bootloaders.</p>
+      <p>He is silent, chill, has autism, and occasionally ignores online classes to finish his code. <em>"Ain’t no way he is a Project Sekai fanboy..."</em></p>
     </section>
   </main>
 
-  <hr>
-
   <footer>
-    <p>&copy; 2025 Saturn Computing – All Rights Reserved.</p>
+    <p>&copy; <span id="year">2026</span> Saturn Computing – All Rights Reserved.</p>
+    <p>Released via Google Gemini AI assistance</p>
   </footer>
+
+  <script>
+    // Auto age calculator
+    const birthYear = 2013;
+    const birthMonth = 9; // October is 9 (0-indexed)
+    const birthDay = 16;
+    const today = new Date();
+    let age = today.getFullYear() - birthYear;
+    const m = today.getMonth() - birthMonth;
+    if (m < 0 || (m === 0 && today.getDate() < birthDay)) { age--; }
+    document.getElementById("age").textContent = age;
+    document.getElementById("year").textContent = today.getFullYear();
+  </script>
 
 </body>
 </html>
-
-
-
